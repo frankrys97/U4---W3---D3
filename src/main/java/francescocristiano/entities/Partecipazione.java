@@ -17,6 +17,8 @@ public class Partecipazione {
     @ManyToOne
     @JoinColumn(name = "evento_id")
     private Evento evento;
+
+    @Enumerated(EnumType.STRING)
     private Stato stato;
 
     public Partecipazione() {

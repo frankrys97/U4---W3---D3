@@ -30,7 +30,7 @@ public class Evento {
     @JoinColumn(name = "location_id")
     private Location location;
 
-    @OneToMany
+    @OneToMany(mappedBy = "evento")
     private List<Partecipazione> listPartecipazioni;
 
 
@@ -50,7 +50,7 @@ public class Evento {
     public long getId() {
         return id;
     }
-    
+
 
     public String getTitolo() {
         return titolo;
@@ -106,5 +106,19 @@ public class Evento {
 
     public void setListPartecipazioni(List<Partecipazione> listPartecipazioni) {
         this.listPartecipazioni = listPartecipazioni;
+    }
+
+    @Override
+    public String toString() {
+        return "Evento{" +
+                "id=" + id +
+                ", titolo='" + titolo + '\'' +
+                ", dataEvento=" + dataEvento +
+                ", descrizione='" + descrizione + '\'' +
+                ", tipoEvento=" + tipoEvento +
+                ", numeroMassimoPartecipanti=" + numeroMassimoPartecipanti +
+                ", location=" + location +
+                ", listPartecipazioni=" + listPartecipazioni +
+                '}';
     }
 }

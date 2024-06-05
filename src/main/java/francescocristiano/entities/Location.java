@@ -24,10 +24,9 @@ public class Location {
     public Location() {
     }
 
-    public Location(String nome, String città, List<Evento> eventi) {
+    public Location(String nome, String città) {
         this.nome = nome;
         this.città = città;
-        this.eventi = eventi;
     }
 
     public UUID getId() {
@@ -56,5 +55,14 @@ public class Location {
 
     public void setEventi(List<Evento> eventi) {
         this.eventi = eventi;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", città='" + città + '\'' +
+                '}';
     }
 }
