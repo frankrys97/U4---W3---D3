@@ -57,4 +57,14 @@ public class Partecipazione {
     public void setStato(Stato stato) {
         this.stato = stato;
     }
+
+    @Override
+    public String toString() {
+        return "Partecipazione{" +
+                "id=" + id +
+                ", persona=" + persona +
+                ", evento=" + evento +
+                ", stato=" + stato +
+                '}';
+    }
 }

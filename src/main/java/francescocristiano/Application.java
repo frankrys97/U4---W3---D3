@@ -57,6 +57,8 @@ public class Application {
         System.out.println(persona2FromDb);
         System.out.println(persona3FromDb);
 
+        persona1FromDb.getListaPartecipazioni().forEach(System.out::println);
+
         Location location1FromDb = ld.getById("50295b60-9299-48ce-ad48-ece9fa4db926"); // Torino
         Location location2FromDb = ld.getById("c81d4ae2-b9bb-4ddd-866c-25a537c5ab5d"); // Milano
         Location location3FromDb = ld.getById("0d63f149-0f45-4102-8658-8753ee92e28d"); // Roma

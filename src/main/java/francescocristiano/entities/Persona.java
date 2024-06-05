@@ -87,4 +87,16 @@ public class Persona {
     public void setListaPartecipazioni(List<Partecipazione> listaPartecipazioni) {
         this.listaPartecipazioni = listaPartecipazioni;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cognome='" + cognome + '\'' +
+                ", email='" + email + '\'' +
+                ", dataNascita=" + dataNascita +
+                ", sesso=" + sesso +
+                '}';
+    }
 }

@@ -118,7 +118,6 @@ public class Evento {
                 ", tipoEvento=" + tipoEvento +
                 ", numeroMassimoPartecipanti=" + numeroMassimoPartecipanti +
                 ", location=" + location +
-                ", listPartecipazioni=" + listPartecipazioni +
                 '}';
     }
 }
